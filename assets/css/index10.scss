@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: #AFC5FF;
+$color: #053D72;
+$box-shadow: 0 .6rem .6rem rgba(0,
+0,
+0,
+.05);
+$border:.1rem solid rgba(0,
+0,
+0,
+.2);
+body {
+    font-size: 100%;
+    background-color: $bg-color;
+}
+
+.container {
+    .heading {
+        color: $color;
+        margin: 1.8rem auto;
+        text-align: center;
+    }
+    .box {
+        margin: 2rem auto;
+        width: 50%;
+        height: 40rem;
+        border-radius: .5rem;
+        background-color: white;
+        box-shadow: $box-shadow;
+        .container-chat {
+            display: flex;
+            flex-direction: column;
+            .namecard {
+                width: 100%;
+                height: 5rem;
+                background-color: #DBDBDB;
+                border-radius: .1rem .1rem 0 0;
+                box-shadow: $box-shadow;
+                .profile {
+                    display: flex;
+                    padding-top: 1.5rem;
+                    padding-left: 2rem;
+                    text-align: left;
+                    color: $color;
+                }
+            }
+            .chat-pesan {
+                width: 100%;
+                height: 30rem;
+                padding: 1rem 2rem;
+            }
+            .input-chat {
+                width: 100%;
+                height: 6rem;
+                border-radius: 0 0 .5rem .5rem;
+                background-color: #DBDBDB;
+                padding: 1.5rem 4rem;
+                input {
+                    border: none;
+                    border-radius: 2rem;
+                    width: 35rem;
+                    height: 3rem;
+                    padding-left: 1.2rem;
+                    &::placeholder {
+                        color: $color;
+                        padding-left: 1rem;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                button {
+                    border: none;
+                    border-radius: 3rem;
+                    width: 4rem;
+                    height: 3rem;
+                    transition: .2s linear;
+                    background-color: white;
+                    &:hover {
+                        background-color: $color;
+                        color: white;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: #AFC5FF;
+}
+
+.container .heading {
+  color: #053D72;
+  margin: 1.8rem auto;
+  text-align: center;
+}
+
+.container .box {
+  margin: 2rem auto;
+  width: 50%;
+  height: 40rem;
+  border-radius: .5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+}
+
+.container .box .container-chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .box .container-chat .namecard {
+  width: 100%;
+  height: 5rem;
+  background-color: #DBDBDB;
+  border-radius: .1rem .1rem 0 0;
+  -webkit-box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+}
+
+.container .box .container-chat .namecard .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.5rem;
+  padding-left: 2rem;
+  text-align: left;
+  color: #053D72;
+}
+
+.container .box .container-chat .chat-pesan {
+  width: 100%;
+  height: 30rem;
+  padding: 1rem 2rem;
+}
+
+.container .box .container-chat .input-chat {
+  width: 100%;
+  height: 6rem;
+  border-radius: 0 0 .5rem .5rem;
+  background-color: #DBDBDB;
+  padding: 1.5rem 4rem;
+}
+
+.container .box .container-chat .input-chat input {
+  border: none;
+  border-radius: 2rem;
+  width: 35rem;
+  height: 3rem;
+  padding-left: 1.2rem;
+}
+
+.container .box .container-chat .input-chat input::-webkit-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container .box .container-chat .input-chat input:-ms-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container .box .container-chat .input-chat input::-ms-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container .box .container-chat .input-chat input::placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container .box .container-chat .input-chat input:focus {
+  outline: none;
+}
+
+.container .box .container-chat .input-chat button {
+  border: none;
+  border-radius: 3rem;
+  width: 4rem;
+  height: 3rem;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  background-color: white;
+}
+
+.container .box .container-chat .input-chat button:hover {
+  background-color: #053D72;
+  color: white;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=index10.css.map */

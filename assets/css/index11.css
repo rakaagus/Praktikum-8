@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: #AFC5FF;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container .heading {
+  color: #053D72;
+  font-weight: bold;
+  margin: 1.8rem auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .box {
+  margin: 1rem auto;
+  width: 65%;
+  height: 10rem;
+  border-radius: .5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+  padding: 5rem 9rem;
+}
+
+.container input {
+  padding-left: 1rem;
+  width: 35%;
+  height: 2.3rem;
+  border-radius: .5rem;
+  border: 0.5px solid #053D72;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.container input::-webkit-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container input:-ms-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container input::-ms-input-placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container input::placeholder {
+  color: #053D72;
+  padding-left: 1rem;
+}
+
+.container input:focus {
+  border: 1px solid #053D72;
+  -webkit-box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+}
+
+.container select {
+  border-radius: .5rem;
+  height: 2.3rem;
+  border: 0.5rem solud #053D72;
+}
+/*# sourceMappingURL=index11.css.map */
