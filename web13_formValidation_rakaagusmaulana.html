@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css style -->
+    <link rel="stylesheet" href="assets/css/index13.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" id="perbesar">
+            <div class="heading">
+                <h2>Form Validation</h2>
+            </div>
+
+            <form method="post" name="mylogin">
+
+                <div class="inputGroup">
+                    <div>
+                        <input type="text" name="username" id="nama" value="" placeholder="Nama Anda">
+                        <span id="req_nama" style="display: none; color: red;">isi nama terlebih dahulu</span>
+                        <span id="char_nama" style="display: none; color: red;">maxsimal 30 karakter</span>
+                    </div>
+                    <div>
+                        <input type="email" name="password" id="email" value="" placeholder="Email Anda">
+                        <span id="req_email" style="display: none; color: red;">isi email terlebih dahulu</span>
+                        <span id="valid_email" style="display: none; color: red;">harus menggunakan email valid</span>
+                    </div>
+                </div>
+
+                <div class="inputGroup">
+                    <div>
+                        <input type="text" name="tujuan" id="tujuan" value="" placeholder="Tujuan Anda">
+                        <span id="req_tujuan" style="display: none; color: red;">isi tujuan keberangkatan terlebih dahulu</span>
+                    </div>
+                    <div>
+                        <input type="time" name="" id="time">
+                        <span id="req_jam" style="display: none; color: red;">isi jam keberangkatan terlebih dahulu</span>
+                    </div>
+                </div>
+
+                <div class="inputNumber">
+                    <input type="number" min="0" max="10" id="tiket">
+                    <span id="req_tiket" style="display: none; color: red;">isi jumlah tiket terlebih dahulu</span>
+                    <span id="char_tiket" style="display: none; color: red;">maxsimal 10 tiket</span>
+
+                </div>
+
+                <button type="button" class="submit" id="lanjut">Pesan</button>
+                <!-- <input type="submit" value="Pesan" onclick="validate()"> -->
+            </form>
+
+            <div id="hasil">
+                <p>Nama Pelanggan : <span id="hasil_nama"></span></p>
+
+                <p>Email : <span id="hasil_email"></span></p>
+
+
+                <p>Jam Keberangkatan : <span id="hasil_jam"></span></p>
+
+
+                <p>Tujuan Keberangkatan : <span id="hasil_tujuan"></span></p>
+
+
+                <p>Jumalah Tiket : <span id="hasil_tiket"></span> </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/validation.js"></script>
+</body>
+
+</html>

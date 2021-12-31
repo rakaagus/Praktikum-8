@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: #AFC5FF;
+$color: #053D72;
+$box-shadow: 0 .6rem .6rem rgba(0,
+0,
+0,
+.05);
+$border:.1rem solid rgba(0,
+0,
+0,
+.2);
+body {
+    font-size: 100%;
+    background-color: $bg-color;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .image {
+        margin: 5rem;
+        width: 30%;
+        height: 5rem;
+        img {
+            padding-top: 2rem;
+            width: 100%;
+        }
+    }
+    .box {
+        text-align: center;
+        margin-top: 5rem;
+        width: 30%;
+        height: 33rem;
+        border-radius: .5rem;
+        background-color: white;
+        box-shadow: $box-shadow;
+        .heading {
+            color: $color;
+            font-weight: bold;
+            margin: 1.8rem auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .inputGroup {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2rem;
+            label {
+                text-align: left;
+            }
+            input[type=text] {
+                width: 20rem;
+                height: 2.2rem;
+                border-radius: .3rem;
+                border: $border;
+                padding-left: .5rem;
+                &:focus {
+                    border: .1rem solid $bg-color;
+                    box-shadow: $box-shadow;
+                }
+            }
+            input[type=password] {
+                width: 20rem;
+                height: 2.2rem;
+                border-radius: .3rem;
+                border: $border;
+                padding-left: .5rem;
+                &:focus {
+                    border: .1rem solid $bg-color;
+                }
+            }
+        }
+        input[type=submit] {
+            margin-top: 2rem;
+            width: 20rem;
+            height: 2.4rem;
+            border: none;
+            border-radius: .3rem;
+            color: black;
+            transition: .2s linear;
+            box-shadow: $box-shadow;
+            background-color: $bg-color;
+            &:hover {
+                background-color: $color;
+                color: white;
+            }
+        }
+        .singup {
+            margin-top: 5rem;
+            span {
+                color: blue;
+            }
+        }
+    }
+}
