@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: #AFC5FF;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .box {
+  text-align: center;
+  margin-top: 5rem;
+  width: 766px;
+  height: 560px;
+  border-radius: .5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+}
+
+.container .box .heading {
+  color: #053D72;
+  font-weight: bold;
+  margin: 1.8rem auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .box .inputGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.container .box .inputGroup select {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
+
+.container .box .inputGroup select:focus {
+  outline: none;
+}
+
+.container .box .img {
+  margin-top: 2rem;
+}
+
+.container .box .img img {
+  border-radius: .5rem;
+  width: 20rem;
+  height: 20rem;
+}
+/*# sourceMappingURL=index14.css.map */

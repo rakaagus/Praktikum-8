@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: #AFC5FF;
+$color: #053D72;
+$box-shadow: 0 .6rem .6rem rgba(0,
+0,
+0,
+.05);
+$border:.1rem solid rgba(0,
+0,
+0,
+.5);
+$border-hover:.2rem solid rgba(0,
+0,
+0,
+.5);
+body {
+    font-size: 100%;
+    background-color: $bg-color;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .box {
+        text-align: center;
+        margin-top: 5rem;
+        width: 766px;
+        height: 560px;
+        border-radius: .5rem;
+        background-color: white;
+        box-shadow: $box-shadow;
+        .heading {
+            color: $color;
+            font-weight: bold;
+            margin: 1.8rem auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .inputGroup {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 2rem;
+            select {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: $border;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .img {
+            margin-top: 2rem;
+            img {
+                border-radius: .5rem;
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+    }
+}
